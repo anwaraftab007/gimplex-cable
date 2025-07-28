@@ -1194,7 +1194,7 @@ h6 {
 .block-title h2 {
   margin: 0;
   color: var(--thm-black);
-  font-size: 32px;
+  font-size: 18px;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.4;
@@ -1202,13 +1202,13 @@ h6 {
 
 @media (min-width: 481px) {
   .block-title h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
 }
 
 @media (min-width: 1200px) {
   .block-title h2 {
-    font-size: 44px;
+    font-size: 25px;
     line-height: 1.2;
   }
 }
@@ -6543,7 +6543,7 @@ h6 {
 }
 
 .about-one__content .block-title h2 {
-  font-size: 45px;
+  font-size: 25px;
 }
 
 .about-one__content .about-one__text {
@@ -16229,4 +16229,10 @@ Cta Two
 }
 .mobile-nav__language{
   display: none !important;
+}
+
+@media (min-width: 991px) {
+  .small-title{
+    font-size: 17px !important;
+  }
 }
