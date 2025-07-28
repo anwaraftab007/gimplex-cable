@@ -16178,3 +16178,34 @@ Cta Two
     display: block;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* External */
+.main-menu .main-menu__list li.search-btn, .stricky-header .main-menu__list li.search-btn {
+  display: none !important;
+}
