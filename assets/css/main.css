@@ -16236,3 +16236,12 @@ Cta Two
     font-size: 17px !important;
   }
 }
+@media (min-width: 1200px) {
+  .main-menu .main-menu__list li.our-products ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Equal columns now */
+    /* column-gap: 20px; Optional spacing between columns */
+    min-width: 540px; /* Or increase if content is getting squeezed */
+    justify-content: stretch;
+  }
+}
