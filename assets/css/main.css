@@ -1488,6 +1488,12 @@ h6 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+@media (max-width: 767px){
+  .main-menu .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+}
 
 .main-menu .main-menu__list,
 .main-menu .main-menu__list ul,
@@ -1522,7 +1528,7 @@ h6 {
 .main-menu .main-menu__list,
 .stricky-header .main-menu__list {
   margin-left: auto;
-  border-right: 1px solid #e6eaef;
+  /* border-right: 1px solid #e6eaef; */
   padding-right: 0;
   margin-right: 30px;
 }
@@ -1981,7 +1987,7 @@ h6 {
 }
 
 .main-menu__two .main-menu__list {
-  border-right: 1px solid #e6eaef;
+  /* border-right: 1px solid #e6eaef; */
 }
 
 .main-menu__two .main-menu__list>li>a {
@@ -3797,6 +3803,7 @@ h6 {
   padding-left: 25px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  text-align: justify;
 }
 
 .footer-widget__contact-list li a:hover {
@@ -16215,11 +16222,11 @@ Cta Two
 .search-btn.search-toggler{
   display: none !important;
 }
-.pylon-icon-tech-support{
-  display: none !important;
-}
 @media (max-width: 767px){
   .bottom-footer p {
     text-align: center;
   }
+}
+.mobile-nav__language{
+  display: none !important;
 }
