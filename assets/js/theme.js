@@ -1,6 +1,88 @@
 (function ($) {
     "use strict";
 
+    // Contact us Form Script
+    const API = 'https://gimpex-backend.onrender.com';
+    // const API = 'http://localhost:5000';
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+        if (!form) return; // Exit if no form on page
+      
+        const modal = createModal(); // Inject modal into DOM
+        document.body.appendChild(modal);
+      
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+      
+        form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+
+  const formData = {
+    name: form.querySelector('#name')?.value || '',
+    email: form.querySelector('#email2')?.value || '',
+    phone: form.querySelector('#phone')?.value || '',
+    subject: form.querySelector('#subject')?.value || '',
+    message: form.querySelector('#message')?.value || '',
+  };
+
+  try {
+    const res = await fetch(`${API}/api/contact`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    showModal(data.msg);
+    form.reset(); // 👈 clear fields after success
+  } catch (err) {
+    console.error('Submission error:', err);
+    showModal('Something went wrong!');
+    form.reset(); // 👈 even on error, reset form
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalText;
+  }
+});
+
+
+        
+      
+        function createModal() {
+          const modal = document.createElement('div');
+          modal.id = 'custom-modal';
+          modal.style.display = 'none';
+          modal.innerHTML = `
+            <div class="modal-overlay">
+              <div class="modal-box">
+                <p id="modal-message">...</p>
+                <button id="modal-close-btn">Close</button>
+              </div>
+            </div>
+          `;
+      
+          modal.querySelector('#modal-close-btn').addEventListener('click', () => {
+            modal.style.display = 'none';
+          });
+      
+          return modal;
+        }
+      
+        function showModal(message) {
+          const modal = document.getElementById('custom-modal');
+          if (!modal) return;
+      
+          modal.querySelector('#modal-message').innerText = message;
+          modal.style.display = 'flex';
+        }
+      });
+
+
+
+
     if ($(".testimonials-two__carousel__slider").length && $(".testimonials-two__carousel__thumbs").length) {
         // Initialize the main slider (swiper)
         var slider = new Swiper(".testimonials-two__carousel__slider", {
