@@ -16336,3 +16336,6 @@ Cta Two
   .about-three__image-text{
     display: none !important;
   }
+  .footer-widget__about-phone{
+    display: none !important;
+  }
