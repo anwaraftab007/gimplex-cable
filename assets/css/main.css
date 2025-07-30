@@ -16227,6 +16227,8 @@ Cta Two
 @media (max-width: 1280px){
   .bottom-footer .container {
     justify-content: center;
+    text-align: center;
+    line-height: normal;
   }
 }
 .mobile-nav__language{
@@ -16336,6 +16338,6 @@ Cta Two
   .about-three__image-text{
     display: none !important;
   }
-  .footer-widget__about-phone{
+  /* .footer-widget__about-phone{
     display: none !important;
-  }
+  } */
