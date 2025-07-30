@@ -16224,9 +16224,9 @@ Cta Two
 .search-btn.search-toggler{
   display: none !important;
 }
-@media (max-width: 767px){
-  .bottom-footer p {
-    text-align: center;
+@media (max-width: 1280px){
+  .bottom-footer .container {
+    justify-content: center;
   }
 }
 .mobile-nav__language{
@@ -16331,4 +16331,8 @@ Cta Two
     .container {
       max-width: 1400px !important;
     }
+  }
+
+  .about-three__image-text{
+    display: none !important;
   }
