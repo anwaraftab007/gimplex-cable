@@ -16345,8 +16345,19 @@ Cta Two
   .footer-widget.footer-widget__about p{
     text-align: justify !important;
   }
+
+  @media (min-width: 1000px) {
+    .footer-explore{
+      padding-left: 1%;
+    }
+   }
  @media (min-width: 1300px) {
   .footer-explore{
-    padding-left: 4rem;
+    padding-left: 2%;
+  }
+ }
+ @media (min-width: 1400px) {
+  .footer-explore{
+    padding-left: 3%;
   }
  }
