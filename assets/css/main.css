@@ -2952,6 +2952,9 @@ h6 {
   background-color: var(--thm-black);
   position: relative;
 }
+.page-header .container h2{
+  text-align: justify !important;
+}
 
 .page-header__bg {
   position: absolute;
@@ -3115,6 +3118,7 @@ h6 {
 
 .blog-details__content {
   margin-top: 10px;
+  text-align: justify;
 }
 
 .blog-details__content h3 {
