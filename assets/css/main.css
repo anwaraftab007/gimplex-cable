@@ -3119,8 +3119,32 @@ h6 {
   font-size: 34px;
   font-weight: 700;
   color: var(--thm-black);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
+.circular-list {
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+  list-style: none; /* remove default bullets */
+}
+
+.circular-list li {
+  position: relative;
+  padding-left: 1.5rem; /* space for custom bullet */
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.circular-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;    /* aligns bullet with text */
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #000; /* solid black disc */
+}
+
 
 .blog-details__content p {
   margin: 0;
