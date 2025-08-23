@@ -3147,6 +3147,9 @@ h6 {
   border-radius: 50%;
   background: var(--thm-color); /* solid black disc */
 }
+.post-bottom p{
+  margin-bottom: 12px !important;
+}
 
 
 .blog-details__content p {
