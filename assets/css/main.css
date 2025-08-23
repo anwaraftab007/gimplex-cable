@@ -3145,7 +3145,7 @@ h6 {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #000; /* solid black disc */
+  background: var(--thm-color); /* solid black disc */
 }
 
 
