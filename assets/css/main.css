@@ -15048,7 +15048,9 @@ Footer Three
 .site-footer--style3 .footer-widget__contact {
   margin-left: 70px;
 }
-
+.site-footer .row {
+  row-gap: 15px;
+}
 
 /***
 ==================================================
