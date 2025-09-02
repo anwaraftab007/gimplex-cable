@@ -266,16 +266,32 @@
                     </p>
                   
                     <ul class="list-unstyled about-two__list service-details__list">
-                        <strong>
-                      <li><i class="fa fa-check-circle"></i> Residential Wiring &amp; Electrical Fittings</li>
-                      <li><i class="fa fa-check-circle"></i> Agricultural Pumping &amp; Submersible Systems</li>
-                      <li><i class="fa fa-check-circle"></i> Commercial Complexes &amp; Retail Spaces</li>
-                      <li><i class="fa fa-check-circle"></i> Industrial Machinery &amp; Heavy-Duty Power Needs</li>
-                      <li><i class="fa fa-check-circle"></i> Surveillance &amp; Communication Networks</li>
-                      <li><i class="fa fa-check-circle"></i> Smart Infrastructure &amp; Renewable Energy Projects</li>
-                    </strong>
-                    </ul>
-                  
+                        <li><i class="fa fa-check-circle"></i> <strong>Residential Wiring &amp; Electrical Fittings</strong></li>
+                        <li><i class="fa fa-check-circle"></i> <strong>Agricultural Pumping &amp; Submersible Systems</strong></li>
+                        <li><i class="fa fa-check-circle"></i> <strong>Commercial Complexes &amp; Retail Spaces</strong></li>
+                        <li><i class="fa fa-check-circle"></i> <strong>Industrial Machinery &amp; Heavy-Duty Power Needs</strong></li>
+                        <li><i class="fa fa-check-circle"></i> <strong>Surveillance &amp; Communication Networks</strong></li>
+                        <li><i class="fa fa-check-circle"></i> <strong>Smart Infrastructure &amp; Renewable Energy Projects</strong></li>
+                      </ul>
+                      
+                  <style>
+                    .service-details__list li {
+  display: flex;
+  align-items: flex-start;  /* icon aligns with first line */
+  margin-bottom: 8px;
+}
+
+.service-details__list li i {
+  margin-right: 8px;
+  flex-shrink: 0;
+  margin-top: 6px; /* nudge down slightly */
+}
+@media (max-width: 576px) {
+    .service-details__list li i {
+        margin-top: 4px; /* nudge down slightly */
+    }
+}
+                  </style>
                     <p>
                       Our comprehensive product line includes more than <strong>10 types of cables and wires</strong>, each designed to meet specific voltage, insulation, and environmental requirements.
                     </p>
@@ -743,7 +759,7 @@
                   });
                 </script>
               </div>
-
+              <br>
                 <div class="service-sidebar__category">
                     <h3 class="blog-sidebar__box-title inter-font">Our Products Range</h3>
                     <ul class="list-unstyled serivces-widget-list">
@@ -825,12 +841,9 @@
                   padding-left: 0px !important;
                   border-bottom: 1px solid #dce4ed !important;
                 }
-              
-                @media (max-width: 991px) {
-                  .service-sidebar__category {
-                    margin-top: 30px !important;
+                .blog-sidebar__box-title {
+                    padding-top: 30px !important;
                   }
-                }
               
                 .inter-font {
                   font-family: "Inter" !important;
