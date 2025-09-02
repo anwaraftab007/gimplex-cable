@@ -1336,14 +1336,14 @@
 
             </div>
             <!-- /.col-lg-8 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 max-md:gap-y-4">
                 <div class="service-sidebar__call">
                   <div class="service-sidebar__call-bg" style="
                       background-image: url(../assets/images/services/service-sidebar-1-1.jpg);
                     "></div>
                   <!-- /.service-sidebar__call-bg -->
                   <i class="pylon-icon-tech-support"></i>
-                  <h3>
+                  <h3 class="inter-font">
                     <a href="tel:(+91)9888988184">+91 9888988184</a>
                   </h3>
                   <div class="pylon-mail">
@@ -1356,7 +1356,7 @@
                   </p>
                 </div> 
               <div class="service-sidebar__category">
-                <h3 class="blog-sidebar__box-title">Our Products Range</h3>
+                <h3 class="blog-sidebar__box-title inter-font">Our Products Range</h3>
                 <ul class="list-unstyled serivces-widget-list">
                   <li class="pyloan-service-list-arrow">
                     <a href="#">Submersible Flat Cables<i class="fas fa-chevron-right"></i></a>
@@ -1425,6 +1425,16 @@
     padding-left: 0px !important;
     border-bottom: 1px solid #dce4ed !important;
 }
+@media (max-width: 991px) {
+    .service-sidebar__category {
+        margin-top: 30px !important;
+    }
+}
+    .inter-font{
+        font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-size: 26px !important;
+    }
       </style>
         <!-- /.container -->
       </section>
