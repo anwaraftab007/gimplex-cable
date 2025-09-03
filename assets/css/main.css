@@ -16476,5 +16476,28 @@ font-style: normal !important;
 font-size: 26px !important;
   }
   .inter{
-    font-family: 'Inter' !important;
-  }
+    font-family: 'Inter' !important;}
+
+
+    /* ---------- Absolute fallback: pin icon absolutely to the right ---------- */
+.faq-one.faq-one__faq-page ul#accordion .para-title {
+  position: relative !important;
+}
+
+.faq-one.faq-one__faq-page ul#accordion .para-title > span {
+  display: block !important;
+  padding-right: 40px !important;   /* space for absolute icon on right */
+  padding-top: 8px !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+}
+
+.faq-one.faq-one__faq-page ul#accordion .para-title > span i {
+  position: absolute !important;
+  right: 10px !important;   /* push to right */
+  top: 12px !important;     /* keep at top */
+  margin: 0 !important;
+  font-size: 18px !important;
+  color: #007bff !important;
+  transform: none !important;
+}
