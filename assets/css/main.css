@@ -16501,3 +16501,17 @@ font-size: 26px !important;
   color: #007bff !important;
   transform: none !important;
 }
+
+
+.accordion-button {
+  align-items: flex-start !important;    /* icon sticks to top line */
+  line-height: 1.5 !important;           /* clean line spacing */
+  padding-right: 2.5rem !important;      /* room for the icon on right */
+  padding-left: 1rem !important;         /* space on left from question text */
+  text-align: left !important;           /* keep text aligned left */
+}
+
+/* Dropdown icon (chevron) */
+.accordion-button::after {
+  margin-top: 0.3rem !important;        /* move icon slightly up */
+}
