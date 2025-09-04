@@ -16502,16 +16502,36 @@ font-size: 26px !important;
   transform: none !important;
 }
 
-
 .accordion-button {
-  align-items: flex-start !important;    /* icon sticks to top line */
-  line-height: 1.5 !important;           /* clean line spacing */
-  padding-right: 2.5rem !important;      /* room for the icon on right */
-  padding-left: 1rem !important;         /* space on left from question text */
-  text-align: left !important;           /* keep text aligned left */
+  align-items: center !important;        /* center text + icon vertically */
+  line-height: 1.5 !important;           
+  padding-right: 2.5rem !important;      /* room for the icon */
+  padding-left: 1rem !important;         
+  text-align: left !important;           
 }
 
-/* Dropdown icon (chevron) */
+/* Dropdown icon (custom +/–) */
 .accordion-button::after {
-  margin-top: 0.3rem !important;        /* move icon slightly up */
+  background-image: none !important;
+  content: "+";                          /* default plus */
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  display: flex;                         /* flexbox keeps it centered */
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;              
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 0 !important;              /* remove manual push */
+  opacity: 1;
+}
+
+/* Show minus when expanded */
+.accordion-button:not(.collapsed)::after {
+  content: "–";   /* real minus sign */
+  opacity: 1;
+}
+/* Bold only the question text */
+.accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: bold;
 }
