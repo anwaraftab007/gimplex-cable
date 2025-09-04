@@ -16525,7 +16525,7 @@ font-size: 26px !important;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;             /* remove manual push */
   opacity: 1;
   position: absolute;
-  top: 12px;
+  top: 18px;
   right: 0.7rem;
 }
 
