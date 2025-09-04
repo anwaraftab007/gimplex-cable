@@ -16507,7 +16507,8 @@ font-size: 26px !important;
   line-height: 1.5 !important;           
   padding-right: 2.5rem !important;      /* room for the icon */
   padding-left: 1rem !important;         
-  text-align: left !important;           
+  text-align: left !important;   
+  position: relative;        
 }
 
 /* Dropdown icon (custom +/–) */
@@ -16521,9 +16522,11 @@ font-size: 26px !important;
   align-items: center;
   justify-content: center;
   transform-origin: center;              
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  margin-top: 0 !important;              /* remove manual push */
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;             /* remove manual push */
   opacity: 1;
+  position: absolute;
+  top: 12px;
+  right: 0.7rem;
 }
 
 /* Show minus when expanded */
