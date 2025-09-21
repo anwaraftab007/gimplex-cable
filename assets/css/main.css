@@ -2459,7 +2459,9 @@ h6 {
 .mobile-nav__social a+a {
   margin-left: 10px;
 }
-
+.text-justify{
+  text-align: justify !important;
+}
 .mobile-nav__social a:hover {
   color: var(--thm-primary);
 }
