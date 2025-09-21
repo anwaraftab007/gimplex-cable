@@ -256,23 +256,56 @@
                     <p>
                         With over 20 years in the electrical manufacturing sector, Gimpex has mastered the art of balancing durability, flexibility and safety in submersible cable design. Each cable integrates a host of features that make it ideal for agricultural and industrial submersible pump applications:
                     </p>
-                    <ul>
+                    <style>
+                        .service-details__list li {
+                          display: flex;
+                          align-items: flex-start; /* icon aligns with first line */
+                          margin-bottom: 0px;
+                          text-align: justify;
+                        }
+                        .service-details__list{
+                            padding-bottom: 0px !important;
+                            margin-bottom: 0px !important;
+                        }
+                      
+                        .service-details__list li i {
+                          margin-right: 8px;
+                          flex-shrink: 0;
+                          margin-top: 6px; /* nudge down slightly */
+                          color: #007bff; /* blue icon */
+                          font-size: 16px;
+                        }
+                      
+                        @media (max-width: 576px) {
+                          .service-details__list li i {
+                            margin-top: 4px; /* adjust for mobile */
+                          }
+                        }
+                      </style>
+                      
+                      <ul class="service-details__list">
                         <li>
-                          <b>Waterproof and Moisture Resistant:</b> The cables utilize premium-grade PVC insulation that is fully water-resistant, safeguarding conductors from short circuits and corrosion caused by water exposure. This ensures consistent electrical conductivity even when submerged in borewell environments for extended periods.
+                          <i class="fa fa-check-circle"></i>
+                          <p><b>Waterproof and Moisture Resistant:</b> The cables utilize premium-grade PVC insulation that is fully water-resistant, safeguarding conductors from short circuits and corrosion caused by water exposure. This ensures consistent electrical conductivity even when submerged in borewell environments for extended periods.</p>
                         </li>
                         <li>
-                          <b>Robust Abrasion Protection:</b> Submersible flat cables must withstand friction against well casings, rocky surfaces and soil particles. A specially formulated outer sheath resists cuts, abrasion and mechanical wear, protecting the internal wiring and prolonging cable life.
+                          <i class="fa fa-check-circle"></i>
+                          <p><b>Robust Abrasion Protection:</b> Submersible flat cables must withstand friction against well casings, rocky surfaces and soil particles. A specially formulated outer sheath resists cuts, abrasion and mechanical wear, protecting the internal wiring and prolonging cable life.</p>
                         </li>
                         <li>
-                          <b>Superior Flexibility for Easy Installation:</b> The flat design combined with soft, pliable insulation enables effortless bending and routing through narrow borewells and complex layouts. This flexibility minimizes installation time and reduces the risk of cable damage during setup.
+                          <i class="fa fa-check-circle"></i>
+                          <p><b>Superior Flexibility for Easy Installation:</b> The flat design combined with soft, pliable insulation enables effortless bending and routing through narrow borewells and complex layouts. This flexibility minimizes installation time and reduces the risk of cable damage during setup.</p>
                         </li>
                         <li>
-                          <b>Excellent Thermal and Electrical Performance:</b> Engineered to operate safely under varying temperatures, our cables maintain their electrical properties in hot climates typical of many agricultural regions. They provide stable current flow without overheating, ensuring pump motors receive uninterrupted power.
+                          <i class="fa fa-check-circle"></i>
+                          <p><b>Excellent Thermal and Electrical Performance:</b> Engineered to operate safely under varying temperatures, our cables maintain their electrical properties in hot climates typical of many agricultural regions. They provide stable current flow without overheating, ensuring pump motors receive uninterrupted power.</p>
                         </li>
                         <li>
-                          <b>Corrosion and Chemical Resistance:</b> Farming environments often expose cables to fertilizers, pesticides and other chemicals. The outer sheath resists degradation from these substances, preventing insulation breakdown and electrical faults.
+                          <i class="fa fa-check-circle"></i>
+                          <p><b>Corrosion and Chemical Resistance:</b> Farming environments often expose cables to fertilizers, pesticides and other chemicals. The outer sheath resists degradation from these substances, preventing insulation breakdown and electrical faults.</p>
                         </li>
                       </ul>
+                      
                       
                     <!-- responsive image row (optional) -->
                 <div class="row our-presence-images">
@@ -305,23 +338,39 @@
                     <p>
                         The versatility of these cables makes them the go-to choice across a variety of water pumping scenarios and industries:
                     </p>
-                    <ul >
-                        <li>
-                          <b>Agricultural Borewells:</b> Designed primarily to power submersible pumps that irrigate fields, orchards and plantations, helping maintain steady water supply in farming operations.
-                        </li>
-                        <li>
-                          <b>Groundwater Extraction:</b> Suitable for domestic and commercial groundwater pumping applications requiring durable, moisture-resistant cable solutions.
-                        </li>
-                        <li>
-                          <b>Industrial Water Supply:</b> Used in factories and plants for submersible pumps operating under continuous water exposure and harsh environmental conditions.
-                        </li>
-                        <li>
-                          <b>Municipal Waterworks:</b> Reliable cables for powering submersible pumps in public water supply systems.
-                        </li>
-                        <li>
-                          <b>Irrigation Systems:</b> Ideal for drip irrigation and sprinkler systems where dependable power to pumps is critical for operational efficiency.
-                        </li>
-                      </ul>
+                    
+<ul class="service-details__list">
+    <li>
+      <i class="fa fa-check-circle"></i>
+      <p>
+        <b>Agricultural Borewells:</b> Designed primarily to power submersible pumps that irrigate fields, orchards and plantations, helping maintain steady water supply in farming operations.
+      </p>
+    </li>
+    <li>
+      <i class="fa fa-check-circle"></i>
+      <p>
+        <b>Groundwater Extraction:</b> Suitable for domestic and commercial groundwater pumping applications requiring durable, moisture-resistant cable solutions.
+      </p>
+    </li>
+    <li>
+      <i class="fa fa-check-circle"></i>
+      <p>
+        <b>Industrial Water Supply:</b> Used in factories and plants for submersible pumps operating under continuous water exposure and harsh environmental conditions.
+      </p>
+    </li>
+    <li>
+      <i class="fa fa-check-circle"></i>
+      <p>
+        <b>Municipal Waterworks:</b> Reliable cables for powering submersible pumps in public water supply systems.
+      </p>
+    </li>
+    <li>
+      <i class="fa fa-check-circle"></i>
+      <p>
+        <b>Irrigation Systems:</b> Ideal for drip irrigation and sprinkler systems where dependable power to pumps is critical for operational efficiency.
+      </p>
+    </li>
+  </ul>
                       
               
                     <p>
@@ -464,8 +513,8 @@
                   font-style: normal !important;
                   font-size: 26px !important;
                 }
-                ol, ul {
-                    padding-left: 1.2rem !important;
+                .service-details__list {
+                    padding-left: .2rem !important;
                 }
               </style>
 
