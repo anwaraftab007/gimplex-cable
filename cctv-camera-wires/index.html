@@ -476,7 +476,108 @@
             <!-- /.col-lg-8 -->
             <div class="col-lg-4">
               <div class="blog-sidebar">
-                <div class="blog-sidebar__box blog-sidebar__post">
+                <div class="service-sidebar__category">
+                  <h3 class="blog-sidebar__box-title inter-font">
+                    Our Products Range
+                  </h3>
+                  <ul class="list-unstyled serivces-widget-list">
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Submersible Flat Cables<i
+                          class="fas fa-chevron-right"
+                        ></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Aluminium Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Round Cables<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >House Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Coaxial Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Cat6 Cables<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Flexible Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Twin Flat Cables<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Solar DC Cables<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >CCTV Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+
+                    <li class="pyloan-service-list-arrow">
+                      <a href="#"
+                        >Speaker Wires<i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="service-sidebar__call">
+                  <div
+                    class="service-sidebar__call-bg"
+                    style="
+                      background-image: url(/assets/images/services/service-sidebar-1-1.jpg);
+                    "
+                  ></div>
+                  <!-- /.service-sidebar__call-bg -->
+                  <i class="pylon-icon-tech-support"></i>
+                  <h3 class="inter-font">
+                    <a href="tel:(+91)9888988184">+91 9888988184</a>
+                  </h3>
+                  <div class="pylon-mail">
+                    <a href="mailto:info@gimpexcable.com">
+                      info@gimpexcable.com
+                    </a>
+                  </div>
+                  <p>
+                    Our team is here to support you with product queries, bulk
+                    orders and technical guidance. Connect with us Today!
+                  </p>
+                </div>
+
+                <div
+                  class="blog-sidebar__box blog-sidebar__post"
+                  style="margin-top: 35px"
+                >
                   <h3 class="blog-sidebar__box-title">Recent Posts</h3>
                   <ul
                     class="list-unstyled footer-widget__post-list"
@@ -485,7 +586,7 @@
                 </div>
 
                 <script>
-                  fetch("../data/posts.json") // adjust path if needed
+                  fetch("/data/posts.json") // adjust path if needed
                     .then((response) => response.json())
                     .then((posts) => {
                       const recentContainer =
@@ -495,117 +596,17 @@
                       posts.slice(0, 4).forEach((post) => {
                         const li = document.createElement("li");
                         li.innerHTML = `
-                          
-                          <div class="footer-widget__post-list-content">
-                            <span>${post.date}</span>
-                             <h3><a href="../${post.url}">${post.title}</a></h3>
-                          </div>
-                        `;
+            
+            <div class="footer-widget__post-list-content">
+              <span>${post.date}</span>
+              <h3><a href="/${post.url}">${post.title}</a></h3>
+            </div>
+          `;
                         recentContainer.appendChild(li);
                       });
                     })
                     .catch((err) => console.error("Error loading posts:", err));
                 </script>
-                <!-- /.blog-sidebar__box -->
-
-                <div class="blog-sidebar__box blog-sidebar__call">
-                  <div class="service-sidebar__call">
-                    <div
-                      class="service-sidebar__call-bg"
-                      style="
-                        background-image: url(../assets/images/services/service-sidebar-1-1.jpg);
-                      "
-                    ></div>
-                    <!-- /.service-sidebar__call-bg -->
-                    <i class="pylon-icon-tech-support"></i>
-                    <h3>
-                      <a href="tel:(+91)9888988184">+91 9888988184</a>
-                    </h3>
-                    <div class="pylon-mail">
-                      <a
-                        href="mailto:info@gimpexcable.com
-"
-                        >info@gimpexcable.com
-                      </a>
-                    </div>
-                    <p>
-                      Our team is here to support you with product queries, bulk
-                      orders and technical guidance. Connect with us Today!
-                    </p>
-                  </div>
-                </div>
-                <!-- /.service-sidebar__call -->
-
-                <div class="blog-sidebar__box blog-sidebar__post">
-                  <h3 class="blog-sidebar__box-title">Our Product Range</h3>
-                  <ul class="list-unstyled footer-widget__post-list">
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3>
-                          <a href="../submersible-flat-cables"
-                            >Submersible Flat Cables</a
-                          >
-                        </h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3>
-                          <a href="../aluminium-wires">Aluminium Wires</a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../round-cables">Round Cables</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../house-wires">House Wires</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../coaxial-wires">Coaxial Wires</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../cat6-cables">Cat6 Cables</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../flexible-wires">Flexible Wires</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3>
-                          <a href="../twin-flat-cables">Twin Flat Cables</a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3>
-                          <a href="../solar-dc-cables">Solar DC Cables</a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../cctv-wires">CCTV Wires</a></h3>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="footer-widget__post-list-content">
-                        <h3><a href="../speaker-wires">Speaker Wires</a></h3>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <!-- /.blog-sidebar -->
