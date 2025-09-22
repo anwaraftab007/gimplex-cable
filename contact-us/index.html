@@ -212,6 +212,28 @@
         </div>
         <!-- /.container -->
       </section>
+      <style>
+        /* Default: hide desktop version, show mobile version */
+.desktop-h2 {
+  display: none;
+}
+.mobile-h2 {
+  display: block;
+  text-align: justify;
+}
+
+/* Desktop screens */
+@media (min-width: 769px) {
+  .desktop-h2 {
+    display: block;
+    text-align: justify; /* optional */
+  }
+  .mobile-h2 {
+    display: none;
+  }
+}
+
+      </style>
       <!-- /.page-header -->
       <section class="contact-one">
         <div class="container">
@@ -220,10 +242,17 @@
               <div class="contact-one__content">
                 <div class="block-title">
                   <p class="small-title">Get in touch with us</p>
-                  <h2 class="title-block" style="text-align: justify">
-                    Feel free to contact us at any time. We respond to all
-                    inquiries within 24 hours.
-                  </h2>
+                  <!-- Desktop version -->
+<h2 class="title-block desktop-h2">
+  Feel free to contact us at any time.<br />
+  We respond to all inquiries within 24 hours.
+</h2>
+
+<!-- Mobile version -->
+<h2 class="title-block mobile-h2">
+  Feel free to contact us at any time. We respond to all inquiries within 24 hours.
+</h2>
+
                 </div>
                 <div class="contact-one__box">
                   <i class="pylon-icon-telephone"></i>
