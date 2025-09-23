@@ -16483,7 +16483,10 @@ font-size: 26px !important;
   }
   .inter{
     font-family: 'Inter' !important;}
-
+    .main-header__info-phone-content h3 a{
+      font-family: 'Inter' !important;
+      font-size: 16px;
+    }
 
     /* ---------- Absolute fallback: pin icon absolutely to the right ---------- */
 .faq-one.faq-one__faq-page ul#accordion .para-title {
