@@ -5697,7 +5697,14 @@ h6 {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-
+.mobile-nav__wrapper .container,
+.mobile-nav__contact
+{
+  padding-left: 0px !important;
+}
+.mobile-nav__social{
+  padding-left: 6px !important;
+}
 .service-one__content {
   background-color: #fff;
   padding: 30px;
