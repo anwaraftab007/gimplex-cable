@@ -429,43 +429,58 @@
                 <p class="text-justify" style="margin-bottom: 15px; margin-top: 5px;">
                   Why Homeowners, Builders and Industries Trust Gimpex Cables
                 </p>
+                
                 <ul class="list-unstyled about-two__list text-justify" style="margin-top: 5px;">
                   <li>
                     <i class="fa fa-check-circle"></i>
-                    <b>Seamless Availability:</b> Fast product supply anytime, anywhere you require.
+                    <p><b>Seamless Availability:</b> Fast product supply anytime, anywhere you require.</p>
                   </li>
                   <li>
                     <i class="fa fa-check-circle"></i>
-                    <b>Diverse Product Range:</b> Complete wiring solutions for home, commercial & industrial needs.
+                    <p><b>Diverse Product Range:</b> Complete wiring solutions for home, commercial & industrial needs.</p>
                   </li>
                   <li>
                     <i class="fa fa-check-circle"></i>
-                    <b>Value Driven Pricing:</b> Affordable, transparent costs with no hidden surprises.
+                    <p><b>Value Driven Pricing:</b> Affordable, transparent costs with no hidden surprises.</p>
                   </li>
                   <li>
                     <i class="fa fa-check-circle"></i>
-                    <b>Certified Assurance:</b> Quality-tested products with trusted certifications for safety.
+                    <p><b>Certified Assurance:</b> Quality-tested products with trusted certifications for safety.</p>
                   </li>
                 </ul>
                 
                 <style>
+                .about-two__list li {
+                  display: flex !important;
+                  align-items: flex-start !important;
+                  margin-bottom: 12px !important;
+                  text-align: justify !important;
+                }
+                
                 .about-two__list li i {
-  position: absolute;
-  left: 0;
-  top: 0.4em;
-}
-.about-two__list li {
-  position: relative;
-  padding-left: 28px;
-}
-
+                  margin-right: 8px !important;
+                  flex-shrink: 0 !important;
+                  margin-top: 6px !important;
+                  color: #007bff !important;
+                  font-size: 16px !important;
+                }
+                
+                .about-two__list li p {
+                  margin-bottom: 4px !important;
+                }
                 
                 .about-two__list li b {
-  white-space: nowrap; /* prevents bold text from breaking */
-  margin-right: 4px;   /* space between bold and normal text */
-}
-
+                  white-space: nowrap !important; /* prevents bold text from splitting */
+                  margin-right: 4px !important;
+                }
+                
+                @media (max-width: 576px) {
+                  .about-two__list li i {
+                    margin-top: 4px !important;
+                  }
+                }
                 </style>
+                
                 
                 <!-- /.list-unstyled -->
                 <div class="button-wrap">
