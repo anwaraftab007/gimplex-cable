@@ -5568,6 +5568,9 @@ h6 {
 .feature-three__box-inner h3 a:hover {
   color: #fff;
 }
+.footer-widget__post-list-content h3 a {
+  text-align: justify !important;
+}
 
 .feature-three__box-inner p {
   width: 100%;
