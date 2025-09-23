@@ -5705,6 +5705,9 @@ h6 {
 .mobile-nav__social{
   padding-left: 6px !important;
 }
+.readmore-card-link{
+  font-weight: 600 !important;
+}
 .service-one__content {
   background-color: #fff;
   padding: 30px;
