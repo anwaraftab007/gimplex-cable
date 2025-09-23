@@ -3688,6 +3688,9 @@ h6 {
   padding-top: 90px;
   padding-bottom: 60px;
 }
+.site-footer h3{
+  font-family: Inter, sans-serif;
+}
 
 @media (max-width: 991px) {
   .site-footer {
