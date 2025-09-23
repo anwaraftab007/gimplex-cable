@@ -3902,9 +3902,11 @@ h6 {
 }
 
 .footer-widget__post-list-content {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
-
+.list-unstyled img{
+  display: none;
+}
 .footer-widget__post-list-content span {
   font-size: 12px;
   color: var(--thm-base);
