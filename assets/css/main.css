@@ -7085,12 +7085,12 @@ h6 {
 }
 
 .about-two__list li {
-  color: var(--thm-black);
+  /* color: var(--thm-black); */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.8em;
 }
 
