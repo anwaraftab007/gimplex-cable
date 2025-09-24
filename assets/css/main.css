@@ -3598,7 +3598,7 @@ h6 {
 @media (max-width: 991px) {
   .blog-sidebar .footer-widget__post-list-content h3 {
     line-height: 26px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -16484,7 +16484,7 @@ Cta Two
 }
 
 .blog-sidebar__box-title {
-  font-size: 23px !important;
+  font-size: 26px !important;
   color: var(--thm-black) !important;
   margin: 0 !important;
   padding-bottom: 10px !important;
@@ -16493,6 +16493,7 @@ Cta Two
   position: relative !important;
   padding-left: 0px !important;
   border-bottom: 1px solid #dce4ed !important;
+  font-family: 'Inter' !important;
 }
 @media (max-width: 991px) {
   .service-sidebar__category {
