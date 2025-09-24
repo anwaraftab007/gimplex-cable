@@ -810,12 +810,12 @@
 .blog-card__image img {
   width: 100%;
   border-radius: 4px;
-  -webkit-transform: scale(1);
+  /* -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
   transition: opacity 500ms ease, -webkit-transform 500ms ease;
   transition: opacity 500ms ease, transform 500ms ease;
-  transition: opacity 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+  transition: opacity 500ms ease, transform 500ms ease, -webkit-transform 500ms ease; */
 }
 
 .blog-card__image>span {
@@ -842,7 +842,7 @@
   padding: 12px 20px;
 }
 
-.blog-card:hover .blog-card__image>img {
+/* .blog-card:hover .blog-card__image>img {
   opacity: 1;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -850,7 +850,7 @@
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-}
+} */
 
 .blog-card__content {
   width: 100%;
@@ -16470,12 +16470,9 @@ Cta Two
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.35s ease;
+ 
 }
 
-.presence-image-container:hover img.presence-image {
-  transform: scale(1.02);
-}
 
 @media (max-width: 768px) {
   .our-presence-images {
