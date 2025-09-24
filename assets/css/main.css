@@ -835,8 +835,8 @@
   font-weight: 400;
   line-height: 1;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  bottom: 50px;
+  right: 20px;
   border-radius: 4px;
   z-index: 10;
   padding: 12px 20px;
