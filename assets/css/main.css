@@ -3624,6 +3624,7 @@ h6 {
 
 .blog-sidebar .footer-widget__post-list li h3 a {
   color: var(--thm-black2);
+  font-family: Inter, san-serif;
 }
 
 .blog-sidebar .service-sidebar__category-list {
