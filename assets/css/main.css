@@ -7122,6 +7122,9 @@ h6 {
     align-items: center;
     font-size: 18px !important;
   }
+  .feature-one .block-title{
+    margin-bottom: 0px;
+  }
 }
 
 .about-two__box>i {
