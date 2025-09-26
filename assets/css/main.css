@@ -5184,13 +5184,13 @@ h6 {
 
 @media (max-width: 991px) {
   .feature-one {
-    padding: 60px 0px;
+    padding: 30px 0px;
   }
 }
 
 @media (max-width: 425px) {
   .feature-one {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 }
 
@@ -6946,7 +6946,7 @@ h6 {
 }
 
 .about-two__content {
-  margin-left: 70px;
+  margin-left: 0px;
 }
 
 .about-two .about-two__content {
@@ -6956,6 +6956,16 @@ h6 {
 @media (max-width: 991px) {
   .about-two__content {
     margin-left: 0;
+  }
+  .about-two__content .block-title h2,
+  .block-title p{
+    text-align: center !important;
+  }
+ 
+}
+@media (min-width: 992px)  {
+  .about-two__content p{
+    text-align: left !important;
   }
 }
 
@@ -11570,19 +11580,19 @@ h6 {
 
 /* service four */
 .service-four {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 @media (min-width: 992px) {
   .service-four {
-    padding: 280px 0;
+    padding: 80px 0;
     padding-bottom: 50px;
   }
 }
 
 @media (min-width: 1200px) {
   .service-four {
-    padding: 280px 0;
+    padding: 90px 0;
     padding-bottom: 50px;
   }
 }
