@@ -11780,6 +11780,7 @@ h6 {
   color: #555C63;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  text-align: justify !important;
 }
 
 .service-four__single:hover .service-four__single__text {
