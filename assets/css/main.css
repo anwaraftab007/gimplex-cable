@@ -7126,6 +7126,9 @@ h6 {
     margin-bottom: 0px;
   }
 }
+.feature-one .block-title h2{
+  text-align: justify;
+}
 
 .about-two__box>i {
   position: relative;
