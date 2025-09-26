@@ -7135,7 +7135,12 @@ h6 {
   left: 0;
   border-radius: 50%;
 }
-
+@media (max-width: 768px) {
+  .footer-copy .company-desc,
+  .footer-copy .reserved {
+    display: block; /* forces a new line */
+  }
+}
 .about-two__box h3 {
   margin: 0;
   font-size: 22px;
