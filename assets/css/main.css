@@ -11786,6 +11786,9 @@ h6 {
   color: #fff;
 }
 
+.service-four__single:hover .service-four__single__title {
+  color: #fff !important;
+}
 /* main slider two */
 .main-slider-two .swiper-slide .image-layer {
   background-color: #004AA1;
