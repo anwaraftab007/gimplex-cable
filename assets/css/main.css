@@ -3956,7 +3956,10 @@ h6 {
 .bottom-footer {
   background-color: #09192c;
   padding-top: 27.5px;
-  padding-bottom: 27.5px;
+  padding-bottom: 20.5px;
+}
+.bottom-footer p {
+  line-height: 1.7;
 }
 
 .bottom-footer .container {
@@ -3976,6 +3979,9 @@ h6 {
 @media (max-width: 991px) {
   .bottom-footer {
     padding: 25px 0px;
+  }
+  .bottom-footer {
+    padding-bottom: 0px;
   }
 }
 
@@ -15133,6 +15139,7 @@ Bottom Footer Three
 
 .bottom-footer.style3 p {
   color: #8e96a0;
+  line-height: 1.7;
 }
 
 .bottom-footer.style3 .bottom-footer__social a {
