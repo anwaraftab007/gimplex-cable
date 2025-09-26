@@ -11671,9 +11671,15 @@ h6 {
 
 .service-four__single__inner {
   position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-bottom: 38px;
+}
+@media (min-width: 1199px){
+  .service-four__single__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .service-four__single__icon {
