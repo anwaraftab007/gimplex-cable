@@ -7098,7 +7098,7 @@ h6 {
   border-radius: 4px;
   padding: 45px 20px 45px 40px;
   position: absolute;
-  bottom: 30px;
+  bottom: 5px;
   left: -50px;
 }
 
@@ -7114,8 +7114,8 @@ h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    column-gap: 10px;
-    padding: 20px;
+    column-gap: 19px;
+    padding: 15px;
   }
   .about-two__box h3{
     margin-top: 0px !important;
