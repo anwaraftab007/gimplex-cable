@@ -7214,16 +7214,24 @@ h6 {
 .about-three .block-title h2 {
   max-width: 580px;
 }
-
+.service-four .card-info{
+  row-gap: 28px;
+}
 @media (max-width: 991px) {
   .about-three {
     padding: 80px 0 0px;
+  }
+  .service-four .card-info{
+    row-gap: 18px;
   }
 }
 
 @media (max-width: 425px) {
   .about-three {
     padding: 60px 0 0px;
+  }
+  .service-four .card-info{
+    row-gap: 12px;
   }
 }
 @media (min-width: 1200px) {
