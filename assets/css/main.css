@@ -1201,6 +1201,7 @@ h6 {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.4;
+  margin-top:8px;
 }
 
 @media (min-width: 481px) {
@@ -7114,18 +7115,58 @@ h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    column-gap: 19px;
+    column-gap: 10%;
     padding: 15px;
   }
-  .about-two__box h3{
-    margin-top: 0px !important;
-    align-items: center;
+  .about-two__box  h3{
     font-size: 18px !important;
+    margin-top: 0;
   }
   .feature-one .block-title{
     margin-bottom: 0px;
   }
 }
+
+
+/* Small devices */
+@media (min-width: 368px) {
+  .about-two__box {
+    column-gap: 29px;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 400px) {
+  .about-two__box {
+    column-gap: 39px;
+  }
+}
+
+/* Larger mobile up to tablet */
+@media (min-width: 667px) {
+  .about-two__box {
+    column-gap: 84px;
+  }
+}
+
+/* By default show desktop version */
+.about-heading .mobile-only {
+  display: none;
+}
+.about-heading .mobile-only{
+  font-size: 18px;
+}
+/* On mobile, switch */
+@media (max-width: 667px) {
+  .about-heading .desktop-only {
+    display: none;
+  }
+  .about-heading .mobile-only {
+    display: inline;
+  }
+}
+
+
 .feature-one .block-title h2{
   text-align: justify;
 }
