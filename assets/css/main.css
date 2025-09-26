@@ -5553,6 +5553,16 @@ h6 {
   position: relative;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .button-wrap {
+    text-align: center;   /* centers inline elements like <a> */
+  }
+
+  .button-wrap .thm-btn {
+    display: inline-block; /* keep it neat */
+    margin: 0 auto;       /* ensure no side shifting */
+  }
+}
 
 .feature-three__box-inner i::after {
   content: "";
