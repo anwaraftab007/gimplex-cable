@@ -3131,7 +3131,7 @@ h6 {
 
 .blog-details__content h3 {
   margin: 0;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--thm-black);
   margin-bottom: 15px;
@@ -11570,18 +11570,20 @@ h6 {
 
 /* service four */
 .service-four {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 @media (min-width: 992px) {
   .service-four {
-    padding: 120px 0;
+    padding: 280px 0;
+    padding-bottom: 50px;
   }
 }
 
 @media (min-width: 1200px) {
   .service-four {
-    padding: 150px 0;
+    padding: 280px 0;
+    padding-bottom: 50px;
   }
 }
 
