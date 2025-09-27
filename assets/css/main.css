@@ -11921,7 +11921,37 @@ h6 {
 
 @media (min-width: 1200px) {
   .main-slider-two .container-fluid {
+    padding-left: 90px;
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1400px) {
+  .main-slider-two .container-fluid {
+    padding-left: 140px;
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1500px) {
+  .main-slider-two .container-fluid {
     padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1537px) {
+  .main-slider-two .container-fluid {
+    padding-left: 90px;
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1600px){
+  .main-slider-two .container-fluid {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1700px) {
+  .main-slider-two .container-fluid {
+    padding-left: 170px;
     padding-right: 150px;
   }
 }
@@ -11969,7 +11999,32 @@ h6 {
   color: #FFFFFF;
   margin: 0;
   margin-top: 14px;
+  max-width: 500px;
+
 }
+.main-slider-two .hidden-box{
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+.main-slider-two .hidden-boxes{
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  .main-slider-two .hidden-box {
+    display: block;
+  height: 50px;
+  overflow: hidden;
+  }
+  .main-slider-two .hidden-boxes{
+    display: block;
+    height: 49px;
+    overflow: hidden;
+  }
+}
+
 
 .main-slider-two .swiper-slide h2 span {
   font-weight: 600;
@@ -11979,6 +12034,38 @@ h6 {
   .main-slider-two .swiper-slide h2 {
     font-size: 60px;
   }
+  .main-slider-two .hidden-boxes{
+    display: none;
+    height: 0px;
+    overflow: hidden;
+  }
+ 
+}
+@media (max-width: 700px){
+  .main-slider .swiper-slide .image-layer{
+    position: static;
+  }
+}
+@media (min-width: 700px){
+  
+}
+
+@media (min-width: 992px){
+  .main-slider-two .hidden-box{
+    display: block;
+    height: 66px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1310px){
+  .main-slider-two .swiper-slide h2 {
+    max-width: 800px;
+  }
+    .main-slider-two .hidden-box{
+      display: none;
+      height: 0px;
+      overflow: hidden;
+    }
 }
 
 .main-slider-two .swiper-slide .main-slider-two__text {
