@@ -11917,7 +11917,11 @@ h6 {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+@media (max-width: 700px){
+  .main-slider-two .container-fluid {
+    padding-bottom: 50px;
+  }
+}
 @media (min-width: 992px) {
   .main-slider-two .container-fluid {
     padding-top: 150px;
@@ -11987,7 +11991,7 @@ h6 {
   display: inline-flex;
   background-color: #fff;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bolder;
   font-size: 14px;
   line-height: 160%;
   letter-spacing: -0.01em;
@@ -12071,7 +12075,7 @@ h6 {
 }
 @media (min-width: 1320px){
   .main-slider-two .swiper-slide h2 {
-    max-width: 800px;
+    max-width: 700px;
   }
     .main-slider-two .hidden-box{
       display: none;
