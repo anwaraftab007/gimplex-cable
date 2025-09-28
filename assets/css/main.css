@@ -5525,8 +5525,8 @@ h6 {
 .feature-three__box-inner {
   overflow: hidden;
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 0px;
 }
 
 .feature-three__box-inner::before {
