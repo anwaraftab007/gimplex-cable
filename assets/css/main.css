@@ -4008,11 +4008,15 @@ h6 {
 }
 
 .bottom-footer p {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--thm-text-dark);
   margin: 0;
 }
-
+@media (min-width: 365px){
+  .bottom-footer p{
+    font-size: 16px;
+  }
+}
 @media (max-width: 667px) {
   .bottom-footer p {
     margin-bottom: 20px;
