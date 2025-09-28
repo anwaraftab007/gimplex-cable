@@ -7122,9 +7122,13 @@ h6 {
     font-size: 18px !important;
     margin-top: 0;
   }
-  .feature-one .block-title{
-    margin-bottom: 0px;
-  }
+  .feature-one .block-title {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;      /* or column, if you meant vertical */
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
 }
 
 
