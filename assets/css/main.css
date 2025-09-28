@@ -7184,9 +7184,13 @@ h6 {
 
 
 .feature-one .block-title h2{
-  text-align: justify;
+  text-align: center;
 }
-
+@media (min-width: 992px) {
+  .feature-one .block-title h2 {
+    text-align: left;
+  }
+}
 .about-two__box>i {
   position: relative;
   font-size: 60px;
