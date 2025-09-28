@@ -11904,22 +11904,25 @@ h6 {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 150px;
+  padding-right: 150px; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: 992px) {
   .main-slider-two .container-fluid {
     padding-top: 150px;
     padding-bottom: 150px;
-    padding-left: 70px;
-    padding-right: 50px;
+    /* padding-left: 70px;
+    padding-right: 50px; */
   }
 }
+.main-slider-two .container-fluid .row{
+  margin: auto;
+}
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .main-slider-two .container-fluid {
     padding-left: 120px;
     padding-right: 150px;
@@ -11954,7 +11957,7 @@ h6 {
     padding-left: 170px;
     padding-right: 150px;
   }
-}
+} */
 
 .main-slider-two .container-fluid::before {
   content: '';
@@ -16606,18 +16609,18 @@ Cta Two
 }
 
 @media (min-width: 1200px) and (max-width: 1319px) {
-  .container {
+  .container, .container-fluid .row {
     max-width: 80% !important; 
   }
 }
 @media (min-width: 1320px) {
-  .container {
+  .container, .container-fluid .row {
     max-width: 1200px !important;
   }
 }
 
 @media (min-width: 1536px)  {
-    .container {
+    .container, .container-fluid .row {
       max-width: 1400px !important;
     }
   }
