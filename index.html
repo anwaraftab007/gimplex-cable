@@ -2096,11 +2096,51 @@
       <div class="bottom-footer">
         <div class="container">
           <p class="footer-copy">
-            Copyright @ 2025&nbsp;
-            <a href="https://gimplex.com" style="color: white;"><b class="company-name">Gimpex Wires &amp; Cables</b></a>
-            <span class="company-desc">(Gimpex Cable Industries).</span>
-            <span class="reserved">All Rights Reserved.</span>
+            <span class="left-part">
+              Copyright @ 2025&nbsp;
+              <a href="https://gimplex.com" style="color: white;">
+                <b class="company-name">Gimpex Wires &amp; Cables</b>
+              </a>
+            </span>
+            <span class="right-part">
+              <span class="company-desc">(Gimpex Cable Industries).</span>
+              <span class="reserved">All Rights Reserved.</span>
+            </span>
           </p>
+<style>
+  .footer-copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* default: center all */
+  text-align: center;
+  gap: 5px; /* small space between spans */
+}
+
+.footer-copy .left-part,
+.footer-copy .right-part {
+  display: inline-block;
+}
+
+/* Mobile-specific: justify left-part, center right-part */
+@media (max-width: 768px) {
+  .footer-copy {
+    flex-direction: column; /* stack on small screens */
+    align-items: center;    /* center items by default */
+  }
+
+  .footer-copy .left-part {
+    width: 100%;
+    text-align: justify;    /* justify only this part */
+  }
+
+  .footer-copy .right-part {
+    width: 100%;
+    text-align: center;     /* center the rest */
+    margin-top: 4px;        /* optional spacing */
+  }
+}
+
+</style>          
           
           <div class="bottom-footer__social">
             <p>
