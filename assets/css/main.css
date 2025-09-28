@@ -12060,7 +12060,7 @@ h6 {
     overflow: hidden;
   }
 }
-@media (min-width: 1310px){
+@media (min-width: 1320px){
   .main-slider-two .swiper-slide h2 {
     max-width: 800px;
   }
