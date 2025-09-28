@@ -7158,7 +7158,7 @@ h6 {
 @media (min-width: 667px) {
   .about-two__box {
     column-gap: 84px;
-    max-width: 50%;
+    max-width: 42%;
   }
   .about-two__box h3{
     margin-top: 16px;
@@ -7230,6 +7230,7 @@ h6 {
 @media (max-width: 500px){
   .about-two__box h3{
     max-width: 180px;
+    line-height: 23px;
   }
 }
 
