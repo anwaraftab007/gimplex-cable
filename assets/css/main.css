@@ -7225,7 +7225,7 @@ h6 {
   line-height: 30px;
   font-weight: 700;
   color: var(--thm-black);
-  margin-top: 10px;
+  margin-top: 0px;
 }
 @media (max-width: 500px){
   .about-two__box h3{
