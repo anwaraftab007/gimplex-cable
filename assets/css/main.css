@@ -1817,7 +1817,7 @@ h6 {
 }
 
 .main-menu .mobile-nav__toggler {
-  font-size: 20px;
+  font-size: 25px;
   color: var(--thm-black);
   cursor: pointer;
   -webkit-transition: 500ms;
