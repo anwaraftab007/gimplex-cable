@@ -2,8 +2,8 @@
     "use strict";
 
     // Contact us Form Script
-    const API = 'https://gimpex-backend-fikp.onrender.com';
-    // const API = 'http://localhost:5000';
+    // const API = 'https://gimpex-backend-1.onrender.com';
+    const API = 'http://localhost:5000';
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.getElementById('contact-form');
         if (!form) return; // Exit if no form on page
