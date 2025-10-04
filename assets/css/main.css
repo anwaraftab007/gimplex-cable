@@ -16588,7 +16588,15 @@ Cta Two
     min-width: 540px; /* Or increase if content is getting squeezed */
     justify-content: stretch;
   }
+  .main-menu .main-menu__list li.our-presence ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Equal columns now */
+    /* column-gap: 20px; Optional spacing between columns */
+    min-width: 380px; /* Or increase if content is getting squeezed */
+    justify-content: stretch;
+  }
 }
+
 
 
 /* Contact us Form modal */
