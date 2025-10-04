@@ -7164,6 +7164,24 @@ h6 {
     margin-top: 16px;
   }
 }
+@media (min-width: 1199px) {
+  .about-two__box {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1320px) {
+  .about-two__box {
+    max-width: 45%;
+  }
+}
+/* Increase gap between columns on ultra-wide screens */
+@media (min-width: 1536px) {
+  .row.gx-5 > [class*="col-"] {
+    padding-left: 2.5rem !important;  /* Increase as needed */
+    padding-right: 2.5rem !important;
+  }
+}
+
 
 /* By default show desktop version */
 .about-heading .mobile-only {
